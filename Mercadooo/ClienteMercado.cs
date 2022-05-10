@@ -111,7 +111,7 @@ namespace Mercadooo
             AcessarValor = valor;
         } // fim do cadastramento \\
         
-        public string Comsultar(int cpf)
+        public string ConsultarCliente(int cpf)
         {
             if (AcessarCpf == cpf)
             {
@@ -129,11 +129,11 @@ namespace Mercadooo
             }
         }
 
-        public string AtualizarNome(int cpf, string nome)
+        public string AtualizarNome(int cpf, string nomeCompleto)
         {
             if (AcessarCpf == cpf)
             {
-                AcessarNome = nome;
+                AcessarNome = nomeCompleto;
                 return "Seu Nome Foi Atualizado!";
             }
             else
@@ -167,7 +167,24 @@ namespace Mercadooo
             }
         }//fim do método Atualizar Endereço
 
+        public string ExcluirCliente(int cpf)
+        {
+            if (AcessarCpf == cpf)
+            {
+                AcessarCpf = 0;
+                AcessarNome = "";
+                AcessarTelefone = "";
+                AcessarEndereco = "";
+                AcessarQuantidade = 0;
+                AcessarValor = 0;
+                return "Dados Foram Excluidos!";
+            }
+            else
+            {
+                return "CPF Inválido! Digite Novamente!";
+            }
+
+        } 
 
     } // fim da classe \\
-
 } // fim do projeto \\

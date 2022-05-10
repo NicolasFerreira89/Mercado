@@ -128,7 +128,7 @@ namespace Mercadooo
             }
         }
 
-        public void CadastrarFun(int codigo, string nome, string enderecoFun,string telefoneFun, string sexo, string bairro, string funcao, double salario)
+        public void CadastrarFuncionario(int codigo, string nome, string enderecoFun,string telefoneFun, string sexo, string bairro, string funcao, double salario)
         {
             AcessarCodigo = codigo;
             AcessarNomeFun = nome;
@@ -167,7 +167,7 @@ namespace Mercadooo
             }
             else
             {
-                return "Código Invalido!";
+                return "Código Invalido! Digite Novamente!";
             }
 
         }
@@ -180,7 +180,7 @@ namespace Mercadooo
             }
             else
             {
-                return "Código Invalido!";
+                return "Código Invalido! Digite Novamente!";
             }
         }
          public string AtualizarEnderecoFun(int codigo, string enderecoFun)
@@ -192,7 +192,7 @@ namespace Mercadooo
             }
             else
             {
-                return "Código Invalido!";
+                return "Código Invalido! Digite Novamente!";
             }
         }
         public string Atualizarbairro(int codigo, string bairro)
@@ -204,7 +204,7 @@ namespace Mercadooo
             }
             else
             {
-                return "Código Invalido!";
+                return "Código Invalido! Digite Novamente!";
             }
         }
         public string AtulizarFuncao(int codigo, string funcao)
@@ -216,7 +216,7 @@ namespace Mercadooo
             }
             else
             {
-                return "Código Invalido!";
+                return "Código Invalido! Digite Novamente!";
             }
         }
         public string AtualizarSalario(int codigo, double salario)
@@ -229,17 +229,29 @@ namespace Mercadooo
             }
             else
             {
-                return "Código Invalido!";
+                return "Código Invalido! Digite Novamente!";
             }
         }
 
-        
+        public string ExcluirFun(int codigo)
+        {
+            if (AcessarCodigo == codigo)
+            {
+                AcessarCodigo = 0;
+                AcessarNomeFun = "";
+                AcessarTelefoneFun = "";
+                AcessarEnderecoFun = "";
+                AcessarBairro = "";
+                AcessarFuncao = "";
+                AcessarSalario = 0;
+                return "Dados Foram Excluidos!";
+            }
+            else
+            {
+                return "Código Inválido! Digite Novamente!";
+            }
 
-
-
-
-
-
+        } 
     } // fim da classe \\
 
-}
+} // fim do projeto \\
