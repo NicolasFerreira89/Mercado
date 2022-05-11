@@ -16,6 +16,8 @@ namespace Mercadooo
         private string bairro;
         private string funcao;
         private double salario;
+       
+       
         // fim das variaveis \\
 
         public Funcionarios()
@@ -28,8 +30,8 @@ namespace Mercadooo
             AcessarBairro = "";
             AcessarFuncao = "";
             AcessarSalario = 0;
-
-
+           
+            
         }// fim da Construtor
 
         public int AcessarCodigo
@@ -43,8 +45,9 @@ namespace Mercadooo
                 this.codigo = value;
             }
 
-
+        
         }
+      
         public string AcessarNomeFun
         {
             get
@@ -82,6 +85,7 @@ namespace Mercadooo
                 this.enderecoFun = value;
             }
         }
+     
 
         public string AcessarSexoFun
         {
@@ -128,7 +132,7 @@ namespace Mercadooo
             }
         }
 
-        public void CadastrarFuncionario(int codigo, string nome, string enderecoFun,string telefoneFun, string sexo, string bairro, string funcao, double salario)
+        public void CadastrarFuncionario(int codigo, string nome, string enderecoFun,string telefoneFun,string sexo, string bairro, string funcao, double salario)
         {
             AcessarCodigo = codigo;
             AcessarNomeFun = nome;
@@ -137,7 +141,8 @@ namespace Mercadooo
             AcessarSexoFun = sexo;
             AcessarBairro = bairro;
             AcessarFuncao = funcao;
-            AcessarSalario = salario;  
+            AcessarSalario = salario;
+           
         }
         public string ConsultarFun(int codigo)
         {
@@ -207,7 +212,7 @@ namespace Mercadooo
                 return "Código Invalido! Digite Novamente!";
             }
         }
-        public string AtulizarFuncao(int codigo, string funcao)
+        public string AtualizarFuncao(int codigo, string funcao)
         {
             if( AcessarCodigo == codigo)
             {

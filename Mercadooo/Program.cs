@@ -10,6 +10,11 @@ namespace Mercadooo
     {
         static void Main(string[] args)
         {
+            ControlMercado control = new ControlMercado();
+            control.Executar();
+            Console.ReadLine();
+
+
         }
     }
 }

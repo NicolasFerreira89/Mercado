@@ -1,0 +1,7 @@
+C:\Users\nicolas.sferreira5\source\repos\Mercadooo\Mercadooo\obj\Debug\Mercadooo.csproj.AssemblyReference.cache
+C:\Users\nicolas.sferreira5\source\repos\Mercadooo\Mercadooo\obj\Debug\Mercadooo.csproj.CoreCompileInputs.cache
+C:\Users\nicolas.sferreira5\source\repos\Mercadooo\Mercadooo\bin\Debug\Mercadooo.exe.config
+C:\Users\nicolas.sferreira5\source\repos\Mercadooo\Mercadooo\bin\Debug\Mercadooo.exe
+C:\Users\nicolas.sferreira5\source\repos\Mercadooo\Mercadooo\bin\Debug\Mercadooo.pdb
+C:\Users\nicolas.sferreira5\source\repos\Mercadooo\Mercadooo\obj\Debug\Mercadooo.exe
+C:\Users\nicolas.sferreira5\source\repos\Mercadooo\Mercadooo\obj\Debug\Mercadooo.pdb

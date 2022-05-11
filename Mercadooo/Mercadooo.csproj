@@ -44,10 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteMercado.cs" />
+    <Compile Include="ControlMercado.cs" />
     <Compile Include="Estoque.cs" />
     <Compile Include="Funcionarios.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VendaMercado.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
