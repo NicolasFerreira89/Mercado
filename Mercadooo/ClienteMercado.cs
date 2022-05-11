@@ -8,7 +8,7 @@ namespace Mercadooo
 {
     class ClienteMercado
     { // Variáveis \\ 
-        private int cpf;
+        private long cpf;
         private string nomeCompleto;
         private string telefone;
         private string endereco;
@@ -26,7 +26,7 @@ namespace Mercadooo
 
         } // fim do metodo construtor \\
 
-        public int AcessarCpf
+        public long AcessarCpf
         {
             get
             {
@@ -101,7 +101,7 @@ namespace Mercadooo
                 this.valor = value;
             }
         }
-        public void Cadastrar(int cpf, string nome, string telefone, string endereco, int quantidade, double valor)
+        public void Cadastrar(long cpf, string nome, string telefone, string endereco, int quantidade, double valor)
         {
             AcessarCpf = cpf;
             AcessarNome = nome;
@@ -111,7 +111,7 @@ namespace Mercadooo
             AcessarValor = valor;
         } // fim do cadastramento \\
         
-        public string ConsultarCliente(int cpf)
+        public string ConsultarCliente(long cpf)
         {
             if (AcessarCpf == cpf)
             {
@@ -129,7 +129,7 @@ namespace Mercadooo
             }
         }
 
-        public string AtualizarNome(int cpf, string nomeCompleto)
+        public string AtualizarNome(long cpf, string nomeCompleto)
         {
             if (AcessarCpf == cpf)
             {
@@ -142,7 +142,7 @@ namespace Mercadooo
             } // fim do atualizar nome \\
         }
 
-        public string AtualizarTelefone(int cpf, string telefone)
+        public string AtualizarTelefone(long cpf, string telefone)
         {
             if (AcessarCpf == cpf)
             {
@@ -154,7 +154,7 @@ namespace Mercadooo
                 return "CPF Inválido! Digite Novamente!";
             }
         }//fim do  atualizar telefone
-        public string AtualizarEndereco(int cpf, string endereco)
+        public string AtualizarEndereco(long cpf, string endereco)
         {
             if (AcessarCpf == cpf)
             {
@@ -167,7 +167,7 @@ namespace Mercadooo
             }
         }//fim do método Atualizar Endereço
 
-        public string ExcluirCliente(int cpf)
+        public string ExcluirCliente(long cpf)
         {
             if (AcessarCpf == cpf)
             {

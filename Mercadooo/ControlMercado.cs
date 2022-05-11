@@ -76,7 +76,7 @@ namespace Mercadooo
 
                     case 1: // Coletando os dados  Clinete\\
                         Console.WriteLine("Informe o CPF do Cliente");
-                        int cpf = Convert.ToInt32(Console.ReadLine());
+                        long cpf = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Informe o nome do cliente");
                         string nomeCompleto = Console.ReadLine();
                         Console.WriteLine("Informe o Telefone do Cliente");
